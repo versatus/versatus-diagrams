@@ -6,7 +6,6 @@ workspace {
         n = softwareSystem "Node"
 
         current_node = softwaresystem "CNode" "Current Node Participating in DKG" {
-                webApplication = container "Web Application" "Delivers the static content and the Internet banking single page application." "Java and Spring MVC"
                 node_container = container "Node Components" "Contains all components within system that contributes to DKG" {
                 node_component = component "Node module" "Participating in Quorum Election"
                 quorum_component = component "Quorum Module" "Conducts Proof Of Claim Quorum Election in decentralized way"
